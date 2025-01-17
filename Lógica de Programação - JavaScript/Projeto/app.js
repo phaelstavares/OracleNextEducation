@@ -10,7 +10,7 @@ while (escolhaDoUsuario != numeroSecreto) {
 
     // se a escolha for igual ao número secreto
     if (numeroSecreto == escolhaDoUsuario) {
-        alert(`Você acertou! O número é ${numeroSecreto} com ${tentativas} tentativas.`);
+        break;
     } else {
         if (numeroSecreto > escolhaDoUsuario) {
             alert(`O número secreto é maior que ${escolhaDoUsuario}`);
@@ -22,3 +22,6 @@ while (escolhaDoUsuario != numeroSecreto) {
         tentativas++;
     }
 }
+
+let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
+alert(`Você acertou! O número é ${numeroSecreto} com ${tentativas} ${palavraTentativa}.`);
