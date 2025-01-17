@@ -1,12 +1,11 @@
 alert("Boas vindas ao jogo do número secreto!");
-const numeroSecreto = 6;
-console.log(numeroSecreto);
+const numeroSecreto = parseInt(Math.random() * 100 + 1);
 let escolhaDoUsuario;
 let tentativas = 1;
 
 // enquanto a escolha não for igual ao número secreto
 while (escolhaDoUsuario != numeroSecreto) {
-    escolhaDoUsuario = prompt("Escolha um número entre 1 e 10");
+    escolhaDoUsuario = prompt("Escolha um número entre 1 e 100");
 
     // se a escolha for igual ao número secreto
     if (numeroSecreto == escolhaDoUsuario) {
