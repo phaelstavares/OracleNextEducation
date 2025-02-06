@@ -13,6 +13,8 @@ body {
 .apresentacao {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin: 10%;
 }
 
 .titulo-destaque {
