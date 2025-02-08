@@ -5,6 +5,10 @@
     --cor-primaria: #000000;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #22D4fD;
+    --cor-hover: #272727;
+
+    --fonte-primaria: "Krona One", serif;
+    --fonte-secundaria: "Montserrat", serif;
 }
 
 * {
@@ -14,9 +18,8 @@
 }
 
 body {
-    /* height: 100vh; */
-    background-color: #000000;
-    color: #F6F6F6;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 .cabecalho {
@@ -29,10 +32,10 @@ body {
 }
 
 .cabecalho__menu__link {
-    font-family: "Montserrat", serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 600;
-    color: #22D4fD;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
@@ -52,16 +55,16 @@ body {
 
 .apresentacao__conteudo__titulo {
     font-size: 36px;
-    font-family: "Krona One", serif;
+    font-family: var(--fonte-primaria);
 }
 
 .titulo-destaque {
-    color: #22D4fD;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao__conteudo__paragrafo {
     font-size: 24px;
-    font-family: "Montserrat", serif;
+    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__links {
@@ -73,7 +76,7 @@ body {
 }
 
 .apresentacao__links__subtitulo {
-    font-family: "Krona One", serif;
+    font-family: var(--fonte-primaria);
     font-weight: 400;
     font-size: 24px;
 }
@@ -82,28 +85,28 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px solid #22D4fD;
-    color: #F6F6F6;
+    border: 2px solid var(--cor-terciaria);
+    color: var(--cor-secundaria);
     width: 378px;
     text-align: center;
     border-radius: 8px;
     font-size: 24px;
     padding: 21.5px 0;
     text-decoration: none;
-    font-family: "Montserrat", serif;
+    font-family: var(--fonte-secundaria);
     font-weight: 600;
 }
 
 .apresentacao__links-link:hover {
-    background-color: #272727;
+    background-color: var(--cor-hover);
 }
 
 .rodape {
-    color: #000000;
-    background-color: #22D4fD;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
     padding: 24px;
     text-align: center;
-    font-family: "Montserrat", serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 400;
 }
